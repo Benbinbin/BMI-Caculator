@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="calculator">
+      <img src="images/BMICLogo.png" alt="BMI Logo" class="logo">
+      <form action="">
+        <label form='height'>身高 cm</label>
+        <input id="height" type="number" required placeholder="请输入身高">
+        <label form='weight'>体重 kg</label>
+        <input id="weight" type="number" required placeholder="请输入体重">
+      </form>
+      <div class="button">看结果</div>
+      <div class="result-container">
+        <div class="result">
+          <p class="bmi-result">20.90</p>
+          <p>BMI</p>
+          <button class="reset"><img src="images/reset.png" alt="Reset Logo"></button>
+        </div>
+        <h2 class="status">過重</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="record">
+    <h2 class="title">BMI 纪录</h2>
+    <ul></ul>
+  </div>
+
+<footer>
+  <img src="images/BMICLogo-black.png" alt="">
+</footer>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+           https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyCLCiYrxVPMxvdJZVsF9i6dNCIhmAD3RtY",
+      authDomain: "bmi-calculator-ben.firebaseapp.com",
+      databaseURL: "https://bmi-calculator-ben.firebaseio.com",
+      projectId: "bmi-calculator-ben",
+      storageBucket: "bmi-calculator-ben.appspot.com",
+      messagingSenderId: "77990956465",
+      appId: "1:77990956465:web:7f53b55a025c9e2701c190",
+      measurementId: "G-LDQENRTTZ7"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="app.js"></script>
+</body>
+
+</html>
